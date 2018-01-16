@@ -7,7 +7,7 @@ package: build
 	zip deployment.zip main
 
 # Light deploy, does not execute cloudformation
-light: build
+light: package
 	sls deploy -f hello
 
 # Full deploy, execute cloudformation stack
